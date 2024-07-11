@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6491d6, pink);
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.display {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #6491d6, pink);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.controls button:hover {
+    background: linear-gradient(135deg, pink, #6491d6);
+    transform: scale(1.05);
+}
+
+.controls button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
